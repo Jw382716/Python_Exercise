@@ -5,6 +5,7 @@ def solution(k, a, b):
     
     for i in range(k) :
         if a[i] > b[i] :
+            i-=1
             continue
         else :
             a[i] = b[i]
