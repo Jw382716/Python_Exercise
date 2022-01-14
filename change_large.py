@@ -4,19 +4,13 @@ def solution(k, a, b):
     b.sort(reverse=True)
     
     for i in range(k) :
-        if a[i] > b[i] :
-            i-=1
-            continue
-        else :
-            a[i] = b[i]
-
+        a[i] = b[i]
     for i in a :
         answer += i
-
     return answer
 
 k = 3
-a = [1,2,5,4,3]
+a = [5,7,8,8,3]
 b = [5,5,6,6,5]
 answer = solution(k, a, b)
 print(answer)
