@@ -10,7 +10,7 @@ def solution(k, a, b):
     return answer
 
 k = 3
-a = [5,7,8,8,3]
+a = [1,2,5,4,3]
 b = [5,5,6,6,5]
 answer = solution(k, a, b)
 print(answer)
